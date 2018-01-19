@@ -25,7 +25,6 @@ constructor (props){
       this.state = {
             value: 0
         }
-    
 }
 
 
@@ -36,7 +35,7 @@ handleOnPress(value){
 render(){
     return(
         <View>
-        <RadioButton currentValue={this.state.value} value={0} onPress={this.handleOnPress.bind(this)}/>
+         <RadioButton currentValue={this.state.value} value={0} onPress={this.handleOnPress.bind(this)}/>
          <RadioButton currentValue={this.state.value} value={1} onPress={this.handleOnPress.bind(this)}/>
          <RadioButton currentValue={this.state.value} value={2} onPress={this.handleOnPress.bind(this)}/>
         </View>
@@ -50,7 +49,7 @@ Basic
 
 ```js
 <RadioForm
-currentValue={this.state.value}
+ currentValue={this.state.value}
  value={0}
  onPress={this.handleOnPress.bind(this)}
  outerCircleColor:'gray'
